@@ -35,6 +35,12 @@ xattr -cr /Applications/Acrool.app
 
 參考：[解決 macOS Ventura 13 檔案已損毀無法打開技巧方法](https://medium.com/@imaginechiu/%E8%A7%A3%E6%B1%BAmacos-ventura-13-%E6%AA%94%E6%A1%88%E5%B7%B2%E6%90%8D%E6%AF%80%E7%84%A1%E6%B3%95%E6%89%93%E9%96%8B%E6%8A%80%E5%B7%A7%E6%96%B9%E6%B3%95-2aa4f28e181e)
 
+### 連接 Claude / AI（MCP）
+
+Acrool 提供 **MCP（Model Context Protocol）** 連線，讓 **Claude Desktop**、**Claude Code (CLI)**、**OpenAI Codex CLI** 等 AI 助理可以直接在對話中讀取與更新你的任務。
+
+詳細設定步驟（OAuth / PAT 兩種認證、各用戶端設定方式、可用工具與權限）請參考：[連接 Acrool 到 Claude / AI（MCP）](docs/connect-claude-mcp.md)。
+
 ### 回報問題
 
 如果在使用 Acrool App 時遇到錯誤，請至 [Issues](https://github.com/acrool/acrool/issues) 建立回報，並盡量提供：
@@ -75,6 +81,12 @@ xattr -cr /Applications/Acrool.app
 ```
 
 Reference: [Fix macOS Ventura 13 damaged app warning](https://medium.com/@imaginechiu/%E8%A7%A3%E6%B1%BAmacos-ventura-13-%E6%AA%94%E6%A1%88%E5%B7%B2%E6%90%8D%E6%AF%80%E7%84%A1%E6%B3%95%E6%89%93%E9%96%8B%E6%8A%80%E5%B7%A7%E6%96%B9%E6%B3%95-2aa4f28e181e)
+
+### Connect Claude / AI (MCP)
+
+Acrool provides an **MCP (Model Context Protocol)** connection so AI assistants such as **Claude Desktop**, **Claude Code (CLI)**, and **OpenAI Codex CLI** can read and update your tasks directly inside a conversation.
+
+For full setup steps (OAuth / PAT authentication, per-client configuration, available tools and scopes), see: [Connect Acrool to Claude / AI (MCP)](docs/connect-claude-mcp.md).
 
 ### Report Issues
 
