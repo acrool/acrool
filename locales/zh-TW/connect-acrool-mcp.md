@@ -25,7 +25,7 @@ Acrool 提供 MCP（Model Context Protocol）伺服器，讓 Claude Desktop、Cl
 
 ## 連線資訊
 
-- **MCP endpoint**：`https://api.workspace.acrool.com/mcp`
+- **MCP endpoint**：`https://api-workspace.acrool.com/mcp`
 - **Transport**：HTTP
 - **Authentication**：OAuth（推薦）或 Personal Access Token（PAT）
 
@@ -49,7 +49,7 @@ Acrool 提供 MCP（Model Context Protocol）伺服器，讓 Claude Desktop、Cl
 
 1. 開啟 Claude Desktop -> **Settings（設定）-> Connectors（連接器）**
 2. 點 **Add custom connector（新增自訂連接器）**
-3. 貼上 MCP 端點：`https://api.workspace.acrool.com/mcp`
+3. 貼上 MCP 端點：`https://api-workspace.acrool.com/mcp`
 4. 儲存後點 **Connect**，瀏覽器會開啟 Acrool 授權頁，選擇工作區並同意
 5. 完成後即可在對話中使用 Acrool 工具
 
@@ -58,7 +58,7 @@ Acrool 提供 MCP（Model Context Protocol）伺服器，讓 Claude Desktop、Cl
 **方式 A - OAuth：**
 
 ```bash
-claude mcp add acrool --transport http https://api.workspace.acrool.com/mcp
+claude mcp add acrool --transport http https://api-workspace.acrool.com/mcp
 ```
 
 加入後，在 Claude Code 內輸入 `/mcp` 觸發登入授權即可。
@@ -70,7 +70,7 @@ claude mcp add acrool --transport http https://api.workspace.acrool.com/mcp
   "mcpServers": {
     "acrool": {
       "type": "http",
-      "url": "https://api.workspace.acrool.com/mcp",
+      "url": "https://api-workspace.acrool.com/mcp",
       "headers": {
         "Authorization": "Bearer <YOUR_ACROOL_PAT>"
       }
@@ -87,7 +87,7 @@ claude mcp add acrool --transport http https://api.workspace.acrool.com/mcp
 
 ```bash
 npx @openai/codex mcp add acrool \
-  --url https://api.workspace.acrool.com/mcp \
+  --url https://api-workspace.acrool.com/mcp \
   --bearer-token-env-var ACROOL_PAT
 
 export ACROOL_PAT=acr_pat_你的token   # 建議加入 ~/.zshrc
@@ -96,7 +96,7 @@ export ACROOL_PAT=acr_pat_你的token   # 建議加入 ~/.zshrc
 **方式 B - OAuth：**
 
 ```bash
-npx @openai/codex mcp add acrool --url https://api.workspace.acrool.com/mcp
+npx @openai/codex mcp add acrool --url https://api-workspace.acrool.com/mcp
 npx @openai/codex mcp login acrool    # 開啟瀏覽器授權
 ```
 
@@ -122,5 +122,5 @@ npx @openai/codex mcp login acrool    # 開啟瀏覽器授權
 ## 疑難排解
 
 - **`Scope '...' is required`**：PAT 缺少對應 scope，請重新產生或編輯 token，補上需要的權限。
-- **授權失敗 / 無法連線**：確認 endpoint 完全等於 `https://api.workspace.acrool.com/mcp`，並確認 token 尚未過期。
+- **授權失敗 / 無法連線**：確認 endpoint 完全等於 `https://api-workspace.acrool.com/mcp`，並確認 token 尚未過期。
 - **尚未選擇工作區**：使用 `acrool_set_default_workspace` 設定預設工作區，或在工具要求時帶入 `workspaceId`。

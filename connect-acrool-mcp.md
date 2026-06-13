@@ -25,7 +25,7 @@ Once Acrool is connected to an MCP-compatible AI assistant, you can ask the AI d
 
 ## Connection Details
 
-- **MCP endpoint:** `https://api.workspace.acrool.com/mcp`
+- **MCP endpoint:** `https://api-workspace.acrool.com/mcp`
 - **Transport:** HTTP
 - **Authentication:** OAuth (recommended) or Personal Access Token (PAT)
 
@@ -49,7 +49,7 @@ Once Acrool is connected to an MCP-compatible AI assistant, you can ask the AI d
 
 1. Open Claude Desktop -> **Settings -> Connectors**
 2. Click **Add custom connector**
-3. Paste the MCP endpoint: `https://api.workspace.acrool.com/mcp`
+3. Paste the MCP endpoint: `https://api-workspace.acrool.com/mcp`
 4. Save, click **Connect**, approve in the Acrool authorization page, and pick a workspace
 5. Acrool tools are now available in your conversations
 
@@ -58,7 +58,7 @@ Once Acrool is connected to an MCP-compatible AI assistant, you can ask the AI d
 **Option A - OAuth:**
 
 ```bash
-claude mcp add acrool --transport http https://api.workspace.acrool.com/mcp
+claude mcp add acrool --transport http https://api-workspace.acrool.com/mcp
 ```
 
 Then run `/mcp` inside Claude Code to trigger the login/authorization flow.
@@ -70,7 +70,7 @@ Then run `/mcp` inside Claude Code to trigger the login/authorization flow.
   "mcpServers": {
     "acrool": {
       "type": "http",
-      "url": "https://api.workspace.acrool.com/mcp",
+      "url": "https://api-workspace.acrool.com/mcp",
       "headers": {
         "Authorization": "Bearer <YOUR_ACROOL_PAT>"
       }
@@ -87,7 +87,7 @@ Replace `<YOUR_ACROOL_PAT>` with the PAT you generated.
 
 ```bash
 npx @openai/codex mcp add acrool \
-  --url https://api.workspace.acrool.com/mcp \
+  --url https://api-workspace.acrool.com/mcp \
   --bearer-token-env-var ACROOL_PAT
 
 export ACROOL_PAT=acr_pat_your_token   # add to ~/.zshrc to persist
@@ -96,7 +96,7 @@ export ACROOL_PAT=acr_pat_your_token   # add to ~/.zshrc to persist
 **Option B - OAuth:**
 
 ```bash
-npx @openai/codex mcp add acrool --url https://api.workspace.acrool.com/mcp
+npx @openai/codex mcp add acrool --url https://api-workspace.acrool.com/mcp
 npx @openai/codex mcp login acrool     # opens the browser to authorize
 ```
 
@@ -122,5 +122,5 @@ Verify with: `npx @openai/codex mcp list`
 ## Troubleshooting
 
 - **`Scope '...' is required`**: Your PAT is missing a scope; regenerate or edit it with the required permission.
-- **Authorization failed / cannot connect**: Confirm the endpoint is exactly `https://api.workspace.acrool.com/mcp` and that your token has not expired.
+- **Authorization failed / cannot connect**: Confirm the endpoint is exactly `https://api-workspace.acrool.com/mcp` and that your token has not expired.
 - **No workspace selected**: Use `acrool_set_default_workspace`, or include a `workspaceId` when a tool asks for it.
