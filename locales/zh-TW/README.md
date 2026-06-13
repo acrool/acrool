@@ -1,8 +1,10 @@
 # Acrool Desktop App
 
-[文件入口](../README.md) | 繁體中文 | [English](README.en.md)
+[English](../../README.md) | 繁體中文
 
 Acrool 是一套從軟體開發者視角設計的雲端任務管理平台，協助團隊在同一個工作區管理任務、專案、團隊協作、狀態流程與交付進度。
+
+這個 repository 用於提供 Acrool Desktop App 下載、release 參考、MCP 設定說明與 bug 回報。
 
 ## 目錄
 
@@ -44,9 +46,9 @@ xattr -cr /Applications/Acrool.app
 
 ## MCP 連線
 
-Acrool 提供 MCP（Model Context Protocol）連線，讓 Claude Desktop、Claude Code (CLI)、OpenAI Codex CLI 等 AI 助理可以直接在對話中讀取與更新你的任務。
+Acrool 提供 MCP（Model Context Protocol）伺服器，讓支援 MCP 的 AI 助理，例如 Claude Desktop、Claude Code (CLI)、OpenAI Codex CLI，可以直接在對話中讀取與更新你的任務。
 
-詳細設定步驟請參考：[連接 Acrool 到 Claude / AI（MCP）](connect-claude-mcp.zh-TW.md)。
+詳細設定步驟請參考：[連接 Acrool 到支援 MCP 的 AI 助理](connect-acrool-mcp.md)。
 
 ## 回報問題
 

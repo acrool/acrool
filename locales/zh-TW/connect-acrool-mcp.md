@@ -1,6 +1,6 @@
-# 連接 Acrool 到 Claude / AI（MCP）
+# 連接 Acrool 到支援 MCP 的 AI 助理
 
-[文件入口](../README.md) | [MCP 文件入口](connect-claude-mcp.md) | 繁體中文 | [English](connect-claude-mcp.en.md)
+[文件入口](README.md) | [English](../../connect-acrool-mcp.md)
 
 Acrool 提供 MCP（Model Context Protocol）伺服器，讓 Claude Desktop、Claude Code (CLI)、OpenAI Codex CLI 等 AI 助理可以直接在對話中讀取與更新你的 Acrool 任務。
 
@@ -17,7 +17,7 @@ Acrool 提供 MCP（Model Context Protocol）伺服器，讓 Claude Desktop、Cl
 
 ## 這是什麼？
 
-把 Acrool 連到 Claude 或其他支援 MCP 的 AI 助理後，你可以直接在對話裡請 AI：
+把 Acrool 連到支援 MCP 的 AI 助理後，你可以直接在對話裡請 AI：
 
 - 列出 / 查看你的任務與專案
 - 讀取任務留言與附件圖片

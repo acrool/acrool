@@ -1,6 +1,6 @@
-# Connect Acrool to Claude / AI Agents (MCP)
+# Connect Acrool with MCP-Compatible AI Assistants
 
-[Documentation Home](../README.md) | [MCP Documentation Home](connect-claude-mcp.md) | [繁體中文](connect-claude-mcp.zh-TW.md) | English
+[Documentation Home](README.md) | [繁體中文](locales/zh-TW/connect-acrool-mcp.md)
 
 Acrool provides an MCP (Model Context Protocol) server so AI assistants such as Claude Desktop, Claude Code (CLI), and OpenAI Codex CLI can read and update your Acrool tasks directly inside a conversation.
 
@@ -17,7 +17,7 @@ Acrool provides an MCP (Model Context Protocol) server so AI assistants such as 
 
 ## What is this?
 
-Once Acrool is connected to Claude or another MCP-compatible AI assistant, you can ask the AI directly in a chat to:
+Once Acrool is connected to an MCP-compatible AI assistant, you can ask the AI directly in a chat to:
 
 - List and view your tasks and projects
 - Read task comments and attached images
